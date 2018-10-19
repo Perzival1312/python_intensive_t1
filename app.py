@@ -75,11 +75,11 @@ def return_to_overview():
 
 def notes_overview(): #This will be the overview of the notes
     top = Toplevel()
-    top.title("About this application...")
-    msg = Message(top, text="about_message")
+    top.title("Notes!")
+    msg = Message(top, text="Placeholder...")
     msg.pack()
-    note_name = Entry()
-    note_name.pack()
+    # note_name = Entry()
+    # note_name.pack()
     new_note_button = Button(top, text="New note", command=note_page(note_name))
     new_note_button.pack()
     del_note_button = Button(top, text="Delete NOte", command=delete_note_file(note_name))
